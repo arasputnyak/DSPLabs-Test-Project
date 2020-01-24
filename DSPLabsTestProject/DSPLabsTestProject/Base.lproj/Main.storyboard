@@ -1,0 +1,344 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="PAO-gz-vn9">
+    <device id="retina4_0" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--INFO-->
+        <scene sceneID="iTx-2N-PfE">
+            <objects>
+                <viewController id="DO1-gf-P06" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="07Q-b8-ddU">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="519"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ABOUT APP" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="f8K-9u-qvp">
+                                <rect key="frame" x="0.0" y="50" width="320" height="17"/>
+                                <fontDescription key="fontDescription" name="DINCondensed-Bold" family="DIN Condensed" pointSize="17"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="justified" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Owf-yq-oGa">
+                                <rect key="frame" x="15" y="117" width="290" height="309"/>
+                                <string key="text">  Welcome to AR Recorder! ♡
+This application turns your iPhone into a portable audio recorder. A friendly, intuitive design makes it even easier to capture personal notes, family moments, classroom lectures, and more. 
+Features:
+∙ capture recordings
+∙ sound visualization
+∙ storage recordings
+∙ listen to recordings</string>
+                                <fontDescription key="fontDescription" name="EuphemiaUCAS" family="Euphemia UCAS" pointSize="18"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.1203010169" green="0.071821841590000005" blue="0.20784422590000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <constraints>
+                            <constraint firstItem="f8K-9u-qvp" firstAttribute="top" secondItem="VIO-EW-gqp" secondAttribute="top" constant="30" id="54P-ZX-pqp"/>
+                            <constraint firstItem="Owf-yq-oGa" firstAttribute="leading" secondItem="VIO-EW-gqp" secondAttribute="leading" constant="15" id="A3X-s7-HTE"/>
+                            <constraint firstItem="Owf-yq-oGa" firstAttribute="top" secondItem="f8K-9u-qvp" secondAttribute="bottom" constant="50" id="ZmL-EC-Z9M"/>
+                            <constraint firstItem="f8K-9u-qvp" firstAttribute="leading" secondItem="VIO-EW-gqp" secondAttribute="leading" id="daj-gJ-xoE"/>
+                            <constraint firstItem="VIO-EW-gqp" firstAttribute="trailing" secondItem="f8K-9u-qvp" secondAttribute="trailing" id="gu8-R1-DG6"/>
+                            <constraint firstItem="VIO-EW-gqp" firstAttribute="trailing" secondItem="Owf-yq-oGa" secondAttribute="trailing" constant="15" id="nh2-5G-CeT"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="VIO-EW-gqp"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="INFO" image="info" id="eEA-Tg-qqy"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="M2q-Lv-qAU" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="884" y="881"/>
+        </scene>
+        <!--RECORD-->
+        <scene sceneID="Txe-YM-5yJ">
+            <objects>
+                <viewController id="TzO-Bc-HQP" customClass="TrackRecordViewController" customModule="DSPLabsTestProject" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="vjA-iy-umo">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="519"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="RECORDING" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uDc-gU-BTZ">
+                                <rect key="frame" x="0.0" y="50" width="320" height="17"/>
+                                <fontDescription key="fontDescription" name="DINCondensed-Bold" family="DIN Condensed" pointSize="17"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="751" text="00:00:00" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2si-5W-eWT">
+                                <rect key="frame" x="132" y="370.5" width="56" height="18.5"/>
+                                <fontDescription key="fontDescription" name="EuphemiaUCAS" family="Euphemia UCAS" pointSize="14"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <stackView opaque="NO" contentMode="scaleToFill" spacing="50" translatesAutoresizingMaskIntoConstraints="NO" id="yjo-Td-Yn2">
+                                <rect key="frame" x="85" y="419" width="150" height="50"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="swS-pr-VNw">
+                                        <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="50" id="LhQ-y8-u2f"/>
+                                            <constraint firstAttribute="width" secondItem="swS-pr-VNw" secondAttribute="height" multiplier="1:1" id="MF7-wm-k3e"/>
+                                        </constraints>
+                                        <state key="normal" image="play"/>
+                                        <state key="selected" image="pause"/>
+                                        <connections>
+                                            <action selector="actionRecord:" destination="TzO-Bc-HQP" eventType="touchUpInside" id="ebv-dC-FVp"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bNI-ZL-CVX">
+                                        <rect key="frame" x="100" y="0.0" width="50" height="50"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="bNI-ZL-CVX" secondAttribute="height" multiplier="1:1" id="O7l-gA-ATa"/>
+                                            <constraint firstAttribute="width" constant="50" id="XIb-wb-BjQ"/>
+                                        </constraints>
+                                        <state key="normal" image="stop"/>
+                                        <connections>
+                                            <action selector="actionStop:" destination="TzO-Bc-HQP" eventType="touchUpInside" id="LPu-ja-mS9"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4pk-vV-MyI">
+                                <rect key="frame" x="0.0" y="75" width="320" height="287.5"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="JPD-1o-hef" customClass="AudioVisualizationView" customModule="DSPLabsTestProject" customModuleProvider="target">
+                                        <rect key="frame" x="16" y="19" width="288" height="250"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="250" id="rv1-WA-iEF"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="JPD-1o-hef" firstAttribute="centerY" secondItem="4pk-vV-MyI" secondAttribute="centerY" id="mpA-9h-yXR"/>
+                                    <constraint firstAttribute="trailing" secondItem="JPD-1o-hef" secondAttribute="trailing" constant="16" id="sSV-g6-LUH"/>
+                                    <constraint firstItem="JPD-1o-hef" firstAttribute="centerX" secondItem="4pk-vV-MyI" secondAttribute="centerX" id="tJL-1z-SbJ"/>
+                                    <constraint firstItem="JPD-1o-hef" firstAttribute="leading" secondItem="4pk-vV-MyI" secondAttribute="leading" constant="16" id="wnS-SG-pGw"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="0.12030101693225059" green="0.071821841586654764" blue="0.20784422588832485" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <constraints>
+                            <constraint firstItem="yjo-Td-Yn2" firstAttribute="top" secondItem="2si-5W-eWT" secondAttribute="bottom" constant="30" id="68H-Mx-vJd"/>
+                            <constraint firstItem="uDc-gU-BTZ" firstAttribute="top" secondItem="Aop-by-9jz" secondAttribute="top" constant="30" id="7LU-dm-UYE"/>
+                            <constraint firstItem="Aop-by-9jz" firstAttribute="trailing" secondItem="uDc-gU-BTZ" secondAttribute="trailing" id="FZe-3i-YKd"/>
+                            <constraint firstItem="yjo-Td-Yn2" firstAttribute="centerX" secondItem="vjA-iy-umo" secondAttribute="centerX" id="Iev-hH-Ayb"/>
+                            <constraint firstItem="4pk-vV-MyI" firstAttribute="trailing" secondItem="Aop-by-9jz" secondAttribute="trailing" id="Nb5-ZZ-Q82"/>
+                            <constraint firstItem="uDc-gU-BTZ" firstAttribute="leading" secondItem="Aop-by-9jz" secondAttribute="leading" id="NoH-Sb-YJk"/>
+                            <constraint firstItem="4pk-vV-MyI" firstAttribute="leading" secondItem="Aop-by-9jz" secondAttribute="leading" id="YVJ-5v-8DQ"/>
+                            <constraint firstItem="2si-5W-eWT" firstAttribute="top" secondItem="4pk-vV-MyI" secondAttribute="bottom" constant="8" id="b5z-KJ-zKN"/>
+                            <constraint firstItem="4pk-vV-MyI" firstAttribute="top" secondItem="uDc-gU-BTZ" secondAttribute="bottom" constant="8" id="cra-ti-ArA"/>
+                            <constraint firstItem="2si-5W-eWT" firstAttribute="centerX" secondItem="vjA-iy-umo" secondAttribute="centerX" id="fy0-lU-0eK"/>
+                            <constraint firstItem="Aop-by-9jz" firstAttribute="bottom" secondItem="yjo-Td-Yn2" secondAttribute="bottom" constant="50" id="i2p-gP-1pb"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="Aop-by-9jz"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="RECORD" image="radio" id="gbO-Ua-qzU"/>
+                    <connections>
+                        <outlet property="audioView" destination="JPD-1o-hef" id="QJ1-Se-qcu"/>
+                        <outlet property="recordButton" destination="swS-pr-VNw" id="kSm-Su-8yy"/>
+                        <outlet property="trackDurationLabel" destination="2si-5W-eWT" id="XyV-Yc-AtL"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="NKu-YZ-bKS" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="882.60869565217399" y="-737.94642857142856"/>
+        </scene>
+        <!--Splash View Controller-->
+        <scene sceneID="f9Y-3E-G1N">
+            <objects>
+                <viewController storyboardIdentifier="SplashViewController" id="5ju-e4-Jwi" customClass="SplashViewController" customModule="DSPLabsTestProject" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="AHj-OA-ICB">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="AR Recorder" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rca-ks-Gcd">
+                                <rect key="frame" x="15" y="130" width="305" height="49.5"/>
+                                <fontDescription key="fontDescription" name="Futura-Bold" family="Futura" pointSize="38"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="DSP Labs Test Project" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FgD-Cn-xEL">
+                                <rect key="frame" x="15" y="189.5" width="305" height="20"/>
+                                <fontDescription key="fontDescription" name="DINCondensed-Bold" family="DIN Condensed" pointSize="20"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.1215686275" green="0.070588235289999995" blue="0.20784313730000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <constraints>
+                            <constraint firstItem="FgD-Cn-xEL" firstAttribute="top" secondItem="rca-ks-Gcd" secondAttribute="bottom" constant="10" id="0Gc-Bt-cbl"/>
+                            <constraint firstItem="rca-ks-Gcd" firstAttribute="leading" secondItem="cnz-oM-dsu" secondAttribute="leading" constant="15" id="9NQ-fU-gFG"/>
+                            <constraint firstItem="cnz-oM-dsu" firstAttribute="trailing" secondItem="FgD-Cn-xEL" secondAttribute="trailing" id="KIm-hf-ZcH"/>
+                            <constraint firstItem="FgD-Cn-xEL" firstAttribute="leading" secondItem="cnz-oM-dsu" secondAttribute="leading" constant="15" id="Kn6-fQ-ath"/>
+                            <constraint firstItem="FgD-Cn-xEL" firstAttribute="top" secondItem="rca-ks-Gcd" secondAttribute="bottom" constant="10" id="V7B-ov-TIu"/>
+                            <constraint firstItem="rca-ks-Gcd" firstAttribute="top" secondItem="cnz-oM-dsu" secondAttribute="top" constant="110" id="Vzc-jc-gVK"/>
+                            <constraint firstItem="cnz-oM-dsu" firstAttribute="trailing" secondItem="rca-ks-Gcd" secondAttribute="trailing" id="t0s-gt-16T"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="cnz-oM-dsu"/>
+                    </view>
+                    <connections>
+                        <outlet property="appNameLabel" destination="rca-ks-Gcd" id="CUl-JP-Ukv"/>
+                        <outlet property="appNoteLabel" destination="FgD-Cn-xEL" id="gSh-5x-8gm"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="NqM-qF-Ndr" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1675" y="-738"/>
+        </scene>
+        <!--LISTEN-->
+        <scene sceneID="Hdd-nt-EXa">
+            <objects>
+                <viewController id="srv-sw-Bxe" customClass="TrackListViewController" customModule="DSPLabsTestProject" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="etn-t3-Ymq">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="519"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="LISTENING" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EVO-S3-dJy">
+                                <rect key="frame" x="132.5" y="50" width="55" height="17"/>
+                                <fontDescription key="fontDescription" name="DINCondensed-Bold" family="DIN Condensed" pointSize="17"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="5m9-sg-jkn">
+                                <rect key="frame" x="0.0" y="87" width="320" height="432"/>
+                                <color key="backgroundColor" red="0.1203010169" green="0.071821841590000005" blue="0.20784422590000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <color key="separatorColor" red="0.93725490570000003" green="0.93725490570000003" blue="0.95686274770000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <inset key="separatorInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="TrackTableViewCell" rowHeight="170" id="BBd-fL-pCH" customClass="TrackTableViewCell" customModule="DSPLabsTestProject" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="320" height="170"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="BBd-fL-pCH" id="8nu-09-TMA">
+                                            <rect key="frame" x="0.0" y="0.0" width="320" height="170"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="22:23 / 23 Oct" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eB7-R7-hYF">
+                                                    <rect key="frame" x="15" y="51.5" width="170" height="20"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="170" id="cRe-8N-lt8"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" name="EuphemiaUCAS" family="Euphemia UCAS" pointSize="15"/>
+                                                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="03:12" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7DT-Pc-dIA">
+                                                    <rect key="frame" x="185" y="51.5" width="120" height="21.5"/>
+                                                    <fontDescription key="fontDescription" name="EuphemiaUCAS" family="Euphemia UCAS" pointSize="16"/>
+                                                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="New Recording 2" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ogX-qJ-PNJ">
+                                                    <rect key="frame" x="15" y="16" width="290" height="25.5"/>
+                                                    <fontDescription key="fontDescription" name="EuphemiaUCAS-Bold" family="Euphemia UCAS" pointSize="19"/>
+                                                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="z3b-Xo-Cle">
+                                                    <rect key="frame" x="142.5" y="124" width="35" height="35"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="35" id="Dyf-0N-cFb"/>
+                                                        <constraint firstAttribute="width" secondItem="z3b-Xo-Cle" secondAttribute="height" multiplier="1:1" id="hQh-cA-bpA"/>
+                                                    </constraints>
+                                                    <state key="normal" image="play-circle"/>
+                                                    <state key="selected" image="pause-circle"/>
+                                                </button>
+                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="daq-Ee-jZG" customClass="SimpleAudioVisualizationView" customModule="DSPLabsTestProject" customModuleProvider="target">
+                                                    <rect key="frame" x="15" y="88" width="290" height="20"/>
+                                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="20" id="9Rx-Nu-JGh"/>
+                                                    </constraints>
+                                                </view>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="7DT-Pc-dIA" firstAttribute="trailing" secondItem="8nu-09-TMA" secondAttribute="trailingMargin" id="B0B-5I-Eyj"/>
+                                                <constraint firstItem="daq-Ee-jZG" firstAttribute="trailing" secondItem="8nu-09-TMA" secondAttribute="trailingMargin" id="Fmq-0H-5IC"/>
+                                                <constraint firstItem="eB7-R7-hYF" firstAttribute="leading" secondItem="8nu-09-TMA" secondAttribute="leadingMargin" id="GwS-Lu-A9v"/>
+                                                <constraint firstItem="daq-Ee-jZG" firstAttribute="top" secondItem="7DT-Pc-dIA" secondAttribute="bottom" constant="15" id="Qc8-cv-oHp"/>
+                                                <constraint firstItem="ogX-qJ-PNJ" firstAttribute="leading" secondItem="8nu-09-TMA" secondAttribute="leadingMargin" id="deA-fy-7J1"/>
+                                                <constraint firstItem="z3b-Xo-Cle" firstAttribute="top" secondItem="daq-Ee-jZG" secondAttribute="bottom" constant="16" id="ed6-Tm-YPV"/>
+                                                <constraint firstAttribute="trailingMargin" secondItem="ogX-qJ-PNJ" secondAttribute="trailing" id="ehF-rS-b5I"/>
+                                                <constraint firstItem="z3b-Xo-Cle" firstAttribute="centerX" secondItem="8nu-09-TMA" secondAttribute="centerX" id="io1-WP-DVx"/>
+                                                <constraint firstItem="ogX-qJ-PNJ" firstAttribute="top" secondItem="8nu-09-TMA" secondAttribute="topMargin" constant="5" id="txs-40-8yG"/>
+                                                <constraint firstItem="7DT-Pc-dIA" firstAttribute="leading" secondItem="eB7-R7-hYF" secondAttribute="trailing" id="w03-qx-UIk"/>
+                                                <constraint firstItem="7DT-Pc-dIA" firstAttribute="top" secondItem="ogX-qJ-PNJ" secondAttribute="bottom" constant="10" id="wbF-rT-D9a"/>
+                                                <constraint firstItem="eB7-R7-hYF" firstAttribute="top" secondItem="ogX-qJ-PNJ" secondAttribute="bottom" constant="10" id="yMH-Ad-euB"/>
+                                                <constraint firstItem="daq-Ee-jZG" firstAttribute="leading" secondItem="8nu-09-TMA" secondAttribute="leadingMargin" id="yTA-lM-5Ee"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <color key="backgroundColor" red="0.1203010169" green="0.071821841590000005" blue="0.20784422590000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <connections>
+                                            <outlet property="audioView" destination="daq-Ee-jZG" id="crP-J0-W4b"/>
+                                            <outlet property="playButton" destination="z3b-Xo-Cle" id="AHd-Fz-F5s"/>
+                                            <outlet property="trackCreationDateLabel" destination="eB7-R7-hYF" id="mTo-SG-zas"/>
+                                            <outlet property="trackDurationLabel" destination="7DT-Pc-dIA" id="1Xb-GO-dTW"/>
+                                            <outlet property="trackNameLabel" destination="ogX-qJ-PNJ" id="I64-tk-ZhK"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="srv-sw-Bxe" id="Nw7-ZL-vdD"/>
+                                    <outlet property="delegate" destination="srv-sw-Bxe" id="K9j-Fh-jT8"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.1203010169" green="0.071821841590000005" blue="0.20784422590000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <constraints>
+                            <constraint firstItem="EVO-S3-dJy" firstAttribute="centerX" secondItem="etn-t3-Ymq" secondAttribute="centerX" id="0a9-s8-aEc"/>
+                            <constraint firstItem="5m9-sg-jkn" firstAttribute="leading" secondItem="8ck-wY-nmj" secondAttribute="leading" id="4hu-CI-HzU"/>
+                            <constraint firstAttribute="bottom" secondItem="5m9-sg-jkn" secondAttribute="bottom" id="CvV-I7-qPv"/>
+                            <constraint firstItem="5m9-sg-jkn" firstAttribute="trailing" secondItem="8ck-wY-nmj" secondAttribute="trailing" id="OZa-Uh-eFh"/>
+                            <constraint firstItem="5m9-sg-jkn" firstAttribute="top" secondItem="EVO-S3-dJy" secondAttribute="bottom" constant="20" id="VCU-qn-Zev"/>
+                            <constraint firstItem="EVO-S3-dJy" firstAttribute="top" secondItem="8ck-wY-nmj" secondAttribute="top" constant="30" id="Xij-xF-bZA"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="8ck-wY-nmj"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="LISTEN" image="listen" id="Lhk-OZ-ytH"/>
+                    <connections>
+                        <outlet property="recordsTableView" destination="5m9-sg-jkn" id="yiX-lG-xEm"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="quv-eY-hTm" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="883.125" y="35"/>
+        </scene>
+        <!--Main View Controller-->
+        <scene sceneID="xUM-FX-nhK">
+            <objects>
+                <tabBarController id="PAO-gz-vn9" customClass="MainViewController" customModule="DSPLabsTestProject" customModuleProvider="target" sceneMemberID="viewController">
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" translucent="NO" id="Aya-Qs-2vd">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="barTintColor" red="0.1203010169" green="0.071821841590000005" blue="0.20784422590000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <color key="selectedImageTintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="TzO-Bc-HQP" kind="relationship" relationship="viewControllers" id="Jt1-IO-w5G"/>
+                        <segue destination="srv-sw-Bxe" kind="relationship" relationship="viewControllers" id="CeR-xh-VNv"/>
+                        <segue destination="DO1-gf-P06" kind="relationship" relationship="viewControllers" id="Oqp-g2-3x2"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="hwr-5M-ulU" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-478" y="-101"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="info" width="25" height="25"/>
+        <image name="listen" width="25" height="25"/>
+        <image name="pause" width="29" height="40"/>
+        <image name="pause-circle" width="60" height="60"/>
+        <image name="play" width="38" height="50"/>
+        <image name="play-circle" width="60" height="60"/>
+        <image name="radio" width="25" height="25"/>
+        <image name="stop" width="70" height="70"/>
+    </resources>
+    <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+</document>
